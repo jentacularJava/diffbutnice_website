@@ -1,0 +1,111 @@
+/* Remove Bulma import and add Bootstrap */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+:root {
+    --blue: #3D5A80;
+    --champagne-pink: #FFE5D9;
+    --pink: #FFCAD4;
+    --cherry-blossom: #F4ACB7;
+    --wenge: #685762;
+}
+body {
+    background: var(--champagne-pink);
+    color: var(--wenge);
+    font-family: 'Playpen Sans', Arial, sans-serif;
+}
+header {
+    background: var(--blue);
+    color: var(--champagne-pink);
+    box-shadow: 0 2px 8px rgba(61,90,128,0.08);
+    padding: 0;
+}
+.navbar {
+    background: var(--blue) !important;
+    border-bottom: 2px solid var(--cherry-blossom);
+    box-shadow: 0 2px 8px rgba(61,90,128,0.08);
+}
+.navbar-brand {
+    font-family: 'Coming Soon', Arial, sans-serif;
+    font-size: 2em;
+    color: var(--champagne-pink) !important;
+    letter-spacing: 2px;
+}
+.navbar-nav .nav-link {
+    color: var(--champagne-pink) !important;
+    font-weight: bold;
+    border-radius: 24px;
+    margin-left: 0.5em;
+    transition: background 0.2s, color 0.2s;
+    padding: 0.5em 1.2em;
+}
+.navbar-nav .nav-link:hover {
+    background: var(--cherry-blossom);
+    color: var(--blue) !important;
+}
+.comic-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: var(--blue);
+}
+.comic-img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(104,87,98,0.08);
+    margin-bottom: 1em;
+    border: 2px solid var(--cherry-blossom);
+    background: var(--champagne-pink);
+}
+.comic-caption {
+    font-style: italic;
+    color: var(--wenge);
+    margin-bottom: 2em;
+}
+.comic-nav {
+    margin: 2em 0;
+}
+.comic-nav a {
+    margin: 0 1.5em;
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+    background: var(--pink);
+    padding: 0.3em 0.8em;
+    border-radius: 4px;
+}
+.comic-nav a:hover {
+    background: var(--blue);
+    color: var(--champagne-pink);
+}
+footer {
+    text-align: center;
+    padding: 2em 0 1em 0;
+    color: var(--wenge);
+    font-size: 0.9em;
+    border-top: 2px solid var(--cherry-blossom);
+    background: var(--champagne-pink);
+}
+.card {
+    /* Remove pink border */
+    border: none;
+    /* Keep shadow and spacing */
+    box-shadow: 0 2px 8px rgba(104,87,98,0.08);
+    margin-bottom: 1em;
+    background: var(--champagne-pink);
+}
+.btn-primary {
+    background-color: var(--blue) !important;
+    color: var(--champagne-pink) !important;
+    border: none;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--cherry-blossom) !important;
+    color: var(--blue) !important;
+}
+.btn-outline-primary {
+    color: var(--blue) !important;
+    border-color: var(--blue) !important;
+    background: var(--champagne-pink) !important;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--blue) !important;
+    color: var(--champagne-pink) !important;
+}
