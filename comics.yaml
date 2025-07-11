@@ -1,0 +1,14 @@
+# Comic metadata file (YAML)
+# Add a title and caption for each comic image
+- filename: Dentist.JPG
+  title: "Dentist"
+  caption: "Any excuse to lie down by myself."
+- filename: Falsies.jpg
+  title: "Falsies"
+  caption: "Oh, you mean those falsies."
+- filename: Leftovers.PNG
+  title: "Leftovers"
+  caption: "Why am I like this?."
+- filename: Smells.png
+  title: "Smells"
+  caption: "Kids do not hold back."
