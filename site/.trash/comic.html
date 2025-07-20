@@ -1,8 +1,0 @@
-<div class="comic-title">{% if comic.title %}{{ comic.title }}{% endif %}</div>
-<img class="comic-img" src="/site/comic_files/{{ comic.filename }}" alt="{{ comic.title }}">
-{% if comic.caption %}<div class="comic-caption">{{ comic.caption }}</div>{% endif %}
-<div class="comic-nav">
-    {% if prev_slug %}<a href="/{{ prev_slug }}.html">&larr; Previous</a>{% endif %}
-    <a href="/archive.html">Archive</a>
-    {% if next_slug %}<a href="/{{ next_slug }}.html">Next &rarr;</a>{% endif %}
-</div>
