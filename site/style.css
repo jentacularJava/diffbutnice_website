@@ -63,10 +63,6 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-.card:hover {
-  /* transform: translateY(-5px); */
-}
-
 .card-title,
 .card-text {
   margin: 20px;
