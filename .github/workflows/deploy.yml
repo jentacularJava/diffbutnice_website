@@ -22,13 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4  # Updated to v4 for consistency
+        uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v5  # Updated to latest version
+        uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-artifact@v4  # Changed from v1 to v4
+        uses: actions/upload-artifact@v4
         with:
-          path: './site'  # Still points to your site folder
+          name: github-pages  # Add this to name the artifact correctly
+          path: './site'     # Still points to your site folder
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # Updated to latest version
+        uses: actions/deploy-pages@v4
