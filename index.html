@@ -51,7 +51,7 @@
       function showComic(idx) {
         const comic = comics[idx];
         document.querySelector('.comic-title').textContent = comic.title;
-        document.querySelector('.comic-img').src = `/comic_files/${comic.filename}`;
+        document.querySelector('.comic-img').src = `comic_files/${comic.filename}`;
         document.querySelector('.comic-img').alt = comic.title;
         document.querySelector('.comic-caption').textContent = comic.caption;
       }
