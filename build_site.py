@@ -4,10 +4,9 @@ import shutil
 
 # Paths
 COMICS_DIR = 'comic_files'
-SITE_DIR = 'site'
 METADATA_FILE = 'comics.yaml'
-JS_OUT = os.path.join(SITE_DIR, 'comics.js')
-IMG_OUT_DIR = os.path.join(SITE_DIR, COMICS_DIR)
+JS_OUT = 'comics.js'
+IMG_OUT_DIR = COMICS_DIR
 
 def get_all_comics():
     # Try to load metadata if available
@@ -55,7 +54,7 @@ def copy_images(comics):
 def main():
     comics = get_all_comics()
     write_comics_js(comics)
-    copy_images(comics)
+    # copy_images(comics)
     print('SPA comic data and images updated. All images in comic_files are now included.')
 
 if __name__ == '__main__':
