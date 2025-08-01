@@ -947,6 +947,11 @@ const comics = [
   },
   {
     title: '',
+    filename: 'drynibbles.JPG',
+    caption: ''
+  },
+  {
+    title: '',
     filename: 'eat you up 09-08-2021_1~2.jpg',
     caption: ''
   },
