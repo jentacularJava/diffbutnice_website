@@ -24,10 +24,12 @@ def get_all_comics():
         entry = meta_dict.get(filename, {})
         title = entry.get('title', '')
         caption = entry.get('caption', '')
+        alt = entry.get('alt_text', '') or entry.get('alt', '')
         comics.append({
             'filename': filename,
             'title': title,
-            'caption': caption
+            'caption': caption,
+            'alt': alt, 
         })
     return comics
 
@@ -39,7 +41,8 @@ def write_comics_js(comics):
             f.write('  {\n')
             f.write(f"    title: {repr(comic['title'])},\n")
             f.write(f"    filename: {repr(comic['filename'])},\n")
-            f.write(f"    caption: {repr(comic['caption'])}\n")
+            f.write(f"    caption: {repr(comic['caption'])},\n")
+            f.write(f"    alt: {repr(comic.get('alt', ''))}\n") 
             f.write('  },\n')
         f.write('];\n')
 
