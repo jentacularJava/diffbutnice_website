@@ -16,17 +16,17 @@ import random
 import threading
 
 class ComicAltTextGenerator:
-    def __init__(self, api_key: str, model: str = "anthropic/claude-3.5-sonnet"):
+    def __init__(self, api_key: str, model: str = "meta-llama/llama-3.2-11b-vision-instruct:free"):
         """
         Initialize the generator with OpenRouter API credentials
         
         Args:
             api_key: Your OpenRouter API key
-            model: The model to use (default: claude-3.5-sonnet for vision)
+            model: The model to use (default: meta-llama/llama-3.2-11b-vision-instruct:free for vision)
         """
         self.api_key = api_key
         self.model = model
-        self.base_url = "https://openrouter.ai/api/v1/chat/completions"
+        self.base_url = "https://openrouter.ai/api/v1"  # Updated base URL
         self.comics_file = "../comics.yaml"
         self.comic_files_dir = "../comic_files"
         
@@ -132,6 +132,8 @@ class ComicAltTextGenerator:
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json"
         }
+        endpoint = f"{self.base_url}/chat/completions"  # Construct full endpoint
+        
         while True:
             # Token bucket gating
             slept = self._acquire_token()
@@ -139,7 +141,11 @@ class ComicAltTextGenerator:
                 print(f"[rate-limit] token wait: slept {slept:.2f}s before request")
                 total_sleep += slept
             try:
-                resp = requests.post(self.base_url, headers=headers, json=json_payload, timeout=60)
+                resp = requests.post(endpoint, headers=headers, json=json_payload, timeout=60)
+                # Handle 404 specifically
+                if resp.status_code == 404:
+                    print(f"Error: Endpoint not found. Please verify the API URL and model name ({self.model})")
+                    return None, retries, total_sleep
                 # Honor Retry-After and status codes
                 if resp.status_code == 429 or 500 <= resp.status_code < 600:
                     retry_after = resp.headers.get("Retry-After")
@@ -233,6 +239,8 @@ Keep descriptions clear and concise but comprehensive enough for screen readers.
             if resp is None:
                 print(f"API request failed after retries: {image_path}")
                 return {"title": "Error", "caption": "Failed to generate description"}
+            if resp.status_code == 404:
+                return {"title": "Error", "caption": "API endpoint or model not found - check configuration"}
             if resp.status_code >= 400:
                 print(f"API returned error {resp.status_code} after {retries} retries, total sleep {slept:.2f}s")
                 return {"title": "Error", "caption": f"API error {resp.status_code}"}
@@ -372,7 +380,7 @@ def main():
     # MODEL = "openai/gpt-4-vision-preview"
     # MODEL = "google/gemini-pro-vision"
     # MODEL = "anthropic/claude-3.5-sonnet"  # Best quality
-    MODEL = "openrouter/horizon-beta"
+    MODEL = "meta-llama/llama-3.2-11b-vision-instruct:free"  # Default vision model
     
     # Initialize generator
     generator = ComicAltTextGenerator(api_key=API_KEY, model=MODEL)

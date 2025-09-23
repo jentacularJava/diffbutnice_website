@@ -25,6 +25,24 @@ const comics = [
     alt: 'Single-panel comic. Interior of a car’s backseat. On the left, a small child with a frown sits buckled in, a large number 6 on their shirt. On the right, a parent labeled “mom” sits buckled in, wearing glasses and a neutral expression. Large overlapping speech bubbles fill the top. From the parent: “ARE YOU OK?” and then “DO YOU FEEL SICK?” From the child: “YES.” and then “NO. I’M JUST IMPATIENT.” The humor comes from the dramatic concern contrasted with the child’s blunt explanation of impatience during the car ride. Signature on the right edge reads “diffBettNice.”'
   },
   {
+    title: '',
+    filename: 'Choose.PNG',
+    caption: '',
+    alt: ''
+  },
+  {
+    title: '',
+    filename: 'Cold hand.jpg',
+    caption: '',
+    alt: ''
+  },
+  {
+    title: '',
+    filename: 'Couchwipe.PNG',
+    caption: '',
+    alt: ''
+  },
+  {
     title: 'Days Without Yelling',
     filename: 'Days without.png',
     caption: '',
@@ -121,7 +139,7 @@ const comics = [
     alt: 'Single-panel comic. A simple stick-figure child stands on the left, smiling with one arm slightly raised. A small, smiling cat with a lifted tail stands on the right. Above the child is a large speech bubble that reads: “CATS NEED LITTER BOXES BECAUSE THEY LIKE LITTERING.” A header at the top center reads “KID LOGIC.” The style is minimal black line art on white, with the joke hinging on the child confusing cat litter with the act of littering. Signature at the bottom center: “diffButNice.”'
   },
   {
-    title: 'Favorite Falsies',
+    title: 'Favourite Falsies',
     filename: 'IMG_0012.jpg',
     caption: '',
     alt: 'Panel 1: A simple white background. On the left, a smiling stick-figure woman with long wavy brown hair, closed eyes with long lashes, and bright red lips touches her hair. Handwritten text above her reads, “These falsies are my favourite.” The emphasis suggests she’s talking about false eyelashes. Panel 2: On the right, another stick-figure woman with straight black hair and red glasses grins with arms open. Handwritten text above her reads, “My faves are ∅, undefined, null, NaN…” She lists programming and math ‘falsy’ values. Visual gag: a pun contrasting cosmetic ‘falsies’ (eyelashes) with ‘falsy’ values in coding. Signature in the bottom-right corner: “diffButNice.”'
@@ -304,7 +322,7 @@ const comics = [
     title: 'Sweet Nothings: Toddler',
     filename: 'IMG_0049.PNG',
     caption: '',
-    alt: 'Header: A ribbon banner reads “SWEET NOTHINGS,” with smaller text on the right end reading “TODDLER EDITION.” The comic is two panels, drawn in simple black-and-white line art with pink glasses as the only color. Panel 1: A mother with long dark hair and pink cat-eye glasses kneels, smiling warmly at her toddler. The toddler, bald-headed and wearing a simple outfit, hugs a teddy bear. The mother says in a dashed speech bubble, “I LOVE BEING YOUR MOM.” Panel 2: The mother remains kneeling, now with a flat, unamused expression. The toddler, still holding the teddy bear, grins and raises a finger. In a dashed speech bubble, the toddler replies, “I WANT TO WATCH TV.” The contrast delivers the joke: the parent’s tender sentiment is met with a blunt, self-interested toddler response.'
+    alt: 'Header: A ribbon banner reads “SWEET NOTHINGS,” with smaller text on the right end reading “TODDLER EDITION.” The comic is two panels, drawn in simple black-and-white line art with pink glasses as the only colour. Panel 1: A mother with long dark hair and pink cat-eye glasses kneels, smiling warmly at her toddler. The toddler, bald-headed and wearing a simple outfit, hugs a teddy bear. The mother says in a dashed speech bubble, “I LOVE BEING YOUR MOM.” Panel 2: The mother remains kneeling, now with a flat, unamused expression. The toddler, still holding the teddy bear, grins and raises a finger. In a dashed speech bubble, the toddler replies, “I WANT TO WATCH TV.” The contrast delivers the joke: the parent’s tender sentiment is met with a blunt, self-interested toddler response.'
   },
   {
     title: 'Please Ignore Each Other',
@@ -343,7 +361,7 @@ const comics = [
     alt: 'Single panel: A simple black-and-white line drawing. On the right, an open-lidded toilet faces left. On the left, a smiling child with short hair and stick-figure limbs points excitedly toward the toilet with one hand while the other arm is raised. Large hand-lettered text above the child reads: “MOMMY! THE TOILET BROKE MY POO! IT’S WHAT I’VE ALWAYS WANTED.” The humor comes from the child’s delighted reaction to the toilet flushing and breaking up their poop.'
   },
   {
-    title: 'Bedtime favorites',
+    title: 'Bedtime favourites',
     filename: 'IMG_0076.jpg',
     caption: '',
     alt: "Single-panel comic. At the top, hand-lettered text reads: 'Every night, we talk about our favourite parts of the day.' Below, two rounded speech bubbles float over a simple drawing of a parent and child at bedtime. The left peach bubble, from the parent, says, 'I really liked cooking with you today.' The right blue bubble, from the child lying on a pillow, says, 'I really liked watching Paw Patrol.' The parent sits on the edge of the bed, smiling toward the child, who looks up with a small smile. Signature in the corner reads 'diffButNice.' The joke contrasts the parent’s meaningful activity with the child’s TV highlight."
@@ -379,7 +397,7 @@ const comics = [
     alt: 'Single-panel comic. Header text on an orange banner reads: “It’s hard being a baby.” Center: A caregiver with straight black hair holds a squirming baby under one arm. The baby clutches a small toy hammer, crying with tears flying. A speech bubble from the baby says: “Why am I allowed to hammer the wood thing but not the laptop? I’m so confused! And angry! And sad!” Left foreground: a round table with an open laptop. Right foreground: a wooden toy bench with colorful pegs meant for hammering. The scene humorously contrasts the toy that’s safe to hit with the forbidden laptop. Signature at bottom right: “diffButNice.”'
   },
   {
-    title: 'Parenting favorites',
+    title: 'Parenting favourites',
     filename: 'IMG_0097.jpg',
     caption: '',
     alt: 'Single panel comic. On the left, a smiling woman with orange hair clasps her hands. A speech bubble above her reads: “What’s your favourite part about having kids?” A second woman with straight black hair stands to the right, holding a baby swaddled in brown. A thought bubble above her says: “When both kids are asleep.” Under the question, the polite, expected reply “My heart is so full.” is written near the space between them, implying it’s what she could say out loud. At the black‑haired woman’s feet, a small child throws a tantrum with open mouth, yelling “RAAH! STOP TALKING!” Blue motion lines show flailing limbs. The artist signature “diffButNice” appears near the bottom.'
@@ -475,10 +493,10 @@ const comics = [
     alt: 'Single-panel comic. On the left, a tall adult figure with straight black hair and pink glasses speaks calmly, one hand raised mildly. Their large speech bubble says, “Please use your gentle voice.” On the right, a smaller child with short brown hair yells with a wide, jagged mouth and raised arms. A alt_text within the adult’s speech bubble reads, “*not in a gentle voice*” pointing to the child’s reply. The child’s big, shaky speech bubble shouts, “I WILL USE MY GENTLE VOICE IF YOU LISTEN TO ME!” Signature in the bottom right: “diffButNice.” The joke contrasts the request for a gentle voice with the child’s loud response.'
   },
   {
-    title: 'Favorite Part',
+    title: 'favourite Part',
     filename: 'IMG_0174.PNG',
     caption: '',
-    alt: "Single-panel comic. Left: A smiling child in a blue baseball cap and jersey that says 'BLUE' and 'JAYS,' wearing a brown mitt and holding a tub labeled 'POPCORN.' Right: An adult with straight black hair and pink glasses smiles and gestures with one hand. The adult asks in a large speech bubble, 'WHAT DID YOU LIKE MOST AT THE GAME?' The child enthusiastically replies in a separate speech bubble, 'THE ESCALATORS!' Minimal white background; simple stick-figure style. Signature in the corner reads 'diffButNice.' The joke is that after a baseball game, the child’s favorite part is the escalators, not the game."
+    alt: "Single-panel comic. Left: A smiling child in a blue baseball cap and jersey that says 'BLUE' and 'JAYS,' wearing a brown mitt and holding a tub labeled 'POPCORN.' Right: An adult with straight black hair and pink glasses smiles and gestures with one hand. The adult asks in a large speech bubble, 'WHAT DID YOU LIKE MOST AT THE GAME?' The child enthusiastically replies in a separate speech bubble, 'THE ESCALATORS!' Minimal white background; simple stick-figure style. Signature in the corner reads 'diffButNice.' The joke is that after a baseball game, the child’s favourite part is the escalators, not the game."
   },
   {
     title: 'Freezer Logic',
@@ -793,6 +811,12 @@ const comics = [
     alt: 'Single-panel comic in blue ink. Two young children sit at a round table, each wearing a shirt with the number 5. Left child has curly pigtails and a flower headband, smiling with eyes closed, holding a crayon next to a paper showing a flower and a heart. Right child has short hair, smiling, holding a crayon over a paper with rainbow-like stripes. Dialogue appears in stacked speech bubbles above them. Left child says, "I have construction paper at home." Right child replies, "Me too. We have a lot." Left child concludes, "That means we\'re friends." The artist signature \'diffButNice\' is written vertically on the right edge.'
   },
   {
+    title: '',
+    filename: 'KickWhenImDown.jpg',
+    caption: '',
+    alt: ''
+  },
+  {
     title: 'New Class Lamps',
     filename: 'Lamps.png',
     caption: '',
@@ -934,7 +958,7 @@ const comics = [
     title: 'Best Toys Parody',
     filename: 'Screenshot_20211008_150533.jpg',
     caption: '',
-    alt: 'Single-panel comic styled as a catalog page titled “Best Toys For 1 Year Olds” in bold at the top. Six simple line drawings show everyday objects a toddler irrationally prefers, each labeled. Top row, left to right: a soda can labeled “POP,” alt_texted “POP CANS;” a diaper cream tube with an arrowed note above it reading “UNBELIEVABLY SHARP CORNERS,” alt_texted “DIAPER CREAM;” the side view of a person’s head with hair pulled back, alt_texted “PONYTAIL.” Bottom row, left to right: a scuffed sneaker labeled “DIRTY SHOE;” a tiny bottle labeled “baby,” alt_texted “BABY SHAMPOO SAMPLE;” a squeezable condiment bottle labeled “HEINZ BBQ SAUCE,” alt_texted “BBQ SAUCE BOTTLE.” The humor comes from presenting unsafe or inconvenient household items as a baby’s favorite ‘toys.’ A small vertical signature on the right edge reads “diffbotnice.”'
+    alt: 'Single-panel comic styled as a catalog page titled “Best Toys For 1 Year Olds” in bold at the top. Six simple line drawings show everyday objects a toddler irrationally prefers, each labeled. Top row, left to right: a soda can labeled “POP,” alt_texted “POP CANS;” a diaper cream tube with an arrowed note above it reading “UNBELIEVABLY SHARP CORNERS,” alt_texted “DIAPER CREAM;” the side view of a person’s head with hair pulled back, alt_texted “PONYTAIL.” Bottom row, left to right: a scuffed sneaker labeled “DIRTY SHOE;” a tiny bottle labeled “baby,” alt_texted “BABY SHAMPOO SAMPLE;” a squeezable condiment bottle labeled “HEINZ BBQ SAUCE,” alt_texted “BBQ SAUCE BOTTLE.” The humor comes from presenting unsafe or inconvenient household items as a baby’s favourite ‘toys.’ A small vertical signature on the right edge reads “diffbotnice.”'
   },
   {
     title: 'Crying in the Dark',
@@ -1007,6 +1031,12 @@ const comics = [
     filename: 'Sliced potatoes.png',
     caption: '',
     alt: 'Panel 1: A simple black‑and‑white stick‑figure comic. On the left, a parent labeled “DAD” holds a small square container and asks, “WHY DIDN’T YOU EAT YOUR COOKIES?” Panel 2: The child, a small figure with a shirt labeled “4,” looks puzzled and replies, “HUH? WHAT COOKIES?” The parent still holds the container. Panel 3: The parent says, “YOUR AFTERNOON SNACK.” The child looks down, hand to chin, thinking. Panel 4: The child brightens and says, “I THOUGHT THOSE WERE SLICED POTATOES. CAN I EAT THEM NOW?” The parent stands beside them holding the same container. The joke is the child mistook cookies for potato slices and now wants to eat them.'
+  },
+  {
+    title: '',
+    filename: 'Slushie.PNG',
+    caption: '',
+    alt: ''
   },
   {
     title: 'Unwanted Idea',
@@ -1147,7 +1177,7 @@ const comics = [
     alt: 'Single panel: A simple, hand-drawn comic shows two round-bodied stick figures. On the left, a taller person with medium-length dark hair smiles with eyes closed and hands pressed to their cheeks, blushing slightly. Their speech bubble says, “YOU’RE SO CUTE! I COULD JUST EAT YOU UP!” On the right, a shorter child with short orange hair stands with hands on hips, mouth open in protest. Their large, emphatic speech bubble replies, “NO! YOU CAN’T EAT ME UP BECAUSE I’M NOT FOOD!” The humor comes from the child taking the affectionate idiom literally. The signature “diffbutnice” appears near the bottom left.'
   },
   {
-    title: 'Favorite Part of Parenting',
+    title: 'Favourite Part of Parenting',
     filename: 'favourite part 03-29-2021_1.jpg',
     caption: '',
     alt: 'Single-panel comic. On the left, a smiling person with long orange hair asks, “What’s your favourite part about having 2 kids?” On the right, a tired-looking parent with short black hair holds a baby swaddled in an orange blanket. They reply aloud, “My heart is so full.” A thought bubble above them reads, “When both kids are asleep.” At their feet, a small child throws a tantrum, arms up, shouting “RAAH! STOP TALKING!” with blue motion lines indicating flailing. Signature at bottom left: @diffbutnice.'
