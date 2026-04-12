@@ -1,0 +1,31 @@
+{
+  "lastUpdated": "April 12, 2026",
+  "status": "Current hyperfixation food: muddy buddies",
+  "projects": [
+    {
+      "name": "TPL_events",
+      "url": "https://github.com/jentacularjava/tpl_events",
+      "desc": "Find Toronto Library events across the city"
+    },
+    {
+      "name": "Skills Visualizer",
+      "url": "https://ori-ax5d.onrender.com/",
+      "desc": "Visualize your skills profile"
+    },
+    {
+      "name": "MP Contact Helper",
+      "url": "https://mp-contact-helper.onrender.com/",
+      "desc": "Create and share templates for sending emails to your local MP"
+    },
+    {
+      "name": "Physio Timer",
+      "url": "https://physio-timer.onrender.com/",
+      "desc": "If you do physiotherapy, try this timer"
+    },
+    {
+      "name": "Toronto Drop-In Recreation Activities Finder",
+      "url": "https://jentacularjava.github.io/Toronto_Drop_In/",
+      "desc": "Find Toronto activities across the city"
+    }
+  ]
+}
