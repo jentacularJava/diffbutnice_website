@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: now-layout
 title: Now
 permalink: /now/
 last_updated: 2026-04-12
