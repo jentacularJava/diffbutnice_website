@@ -2,10 +2,10 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #ff69a5; /* Hot Pink */
-  --secondary-color: #d6e0f8; /* Gold */
-  --background-color: #FFEBCD; /* Blanched Almond */
-  --text-color: #8B4513; /* Saddle Brown */
+  --primary-color: #ff69a5; /* Rose Kiss */
+  --secondary-color: #d6e0f8; /* Lavender */
+  --background-color: #F1E4E5; /* Lavender Blush */
+  --text-color: #0F466B; /* Yale Blue */
   --font-family: 'Playpen Sans', sans-serif;
   --comic-width: 500px; /* Set your desired width */
   --comic-height: 500px; /* Set your desired height */
