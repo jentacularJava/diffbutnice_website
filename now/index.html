@@ -1,119 +1,36 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Now | jentacular</title>
-    <link rel="stylesheet" href="/style.css ">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body style="font-family: sans-serif; line-height: 1.6; color: #333;">
     <main style="max-width: 800px; margin: 2rem auto; padding: 0 1rem;">
-         <h1>What I'm doing now</h1>
-         <p style="font-style: italic; color: #666;">
-            Date: Sep 13, 2026
-        </p>
-        <section id="content-area">
-            <p>Current hyperfixation foods: Vietnamese Coffee, sandwiches, nutella </p>
-            <h2>Projects</h2>
-            <ul style="list-style-type: disc; padding-left: 1.5rem;">
-                <li style="margin-bottom: 0.5rem;">
-                    Working on a psychology research paper on workplace competencies 
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Learning how to make balloon animals
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Making crochet keychains
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Throwing wheel pottery
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Learned the Down line dance (choreographed by Kaylee Dzikowski) 
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Still trying to get back into routine workouts
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Posting more on instagram stories to stay connected with friends
-                </li>
-            </ul>
-            <p>By the way, this is a <a href="https://nownownow.com/about" target="_blank">now page</a>. You should make one too.</p>
-        <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #81abfe;">    
+        {% for e in site.data.now %}
+        {% if forloop.first %}
+        <h1>What I'm doing now</h1>
+        {% elsif forloop.index == 2 %}
+        <hr style="margin: 3rem 0; border: 0; border-top: 1px solid #81abfe;">
         <h1>Previously</h1>
-        <p style="font-style: italic; color: #666;">
-            Date: Jul 18, 2026
-        </p>
-        <section id="content-area">
-            <p>Current hyperfixation foods: Vietnamese Coffee, Farm Boy chickpea chips, French Vanilla ice cream, spicy food</p>
+        {% endif %}
+        <article>
+            <p style="font-style: italic; color: #666;">Date: {{ e.date | date: "%b %-d, %Y" }}</p>
+            <p>Current hyperfixation foods: {{ e.foods }}</p>
             <h2>Projects</h2>
             <ul style="list-style-type: disc; padding-left: 1.5rem;">
-                <li style="margin-bottom: 0.5rem;">
-                    Teaching my 5 year old how to read
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    House repairs
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Eyeing jewelry
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Trying to get back into routine workouts
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Posting more on instagram stories to stay connected with friends
-                </li>
+                {% for p in e.projects %}
+                <li style="margin-bottom: 0.5rem;">{{ p }}</li>
+                {% endfor %}
             </ul>
-        <p style="font-style: italic; color: #666;">
-            Date: Jun 1, 2026
-        </p>
-        <section id="content-area">
-            <p>Current hyperfixation foods: Spicy pickles, black bean brownies, chocolate ice cream</p>
-            <h2>Projects</h2>
-            <ul style="list-style-type: disc; padding-left: 1.5rem;">
-                <li style="margin-bottom: 0.5rem;">
-                    Learning the Midnight Sun dance
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Consulting on SEO, digital marketing, and web analytics for local businesses
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Playing Brotato with my family
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Creating videos on disability advocacy
-                </li>
-                <li style="margin-bottom: 0.5rem;">
-                    Never ending yardwork
-                </li>
-            </ul>     
-        <p style="font-style: italic; color: #666666;">
-            Date: April 13, 2026
-        </p>
-        <p>Current hyperfixation foods: muddy buddies, custard, flourless chocolate cake</p>
-        <h2>Projects</h2>
-        <ul style="list-style-type: disc; padding-left: 1.5rem;">
-            <li style="margin-bottom: 0.5rem;">
-                <a href="https://jentacularjava.github.io/Toronto_Drop_In/" target="_blank">Toronto Drop-In Activities Finder</a>: Find Toronto recreation activities across the city
-            </li>
-            <li style="margin-bottom: 0.5rem;">
-                <a href="https://github.com/jentacularjava/tpl_events" target="_blank">TPL_events</a>: Find Toronto Public Library events across the city
-            </li>
-            <li style="margin-bottom: 0.5rem;">
-                <a href="https://ori-ax5d.onrender.com/" target="_blank">Skills Visualizer</a>: Visualize your skills profile
-            </li>
-            <li style="margin-bottom: 0.5rem;">
-                <a href="https://mp-contact-helper.onrender.com/" target="_blank">MP Contact Helper</a>: Create and share templates for sending emails to your local MP
-            </li>
-            <li style="margin-bottom: 0.5rem;">
-                <a href="https://physio-timer.onrender.com/" target="_blank">Physio Timer</a>: If you do physiotherapy, try this timer
-            </li>
-        </ul>
-        </section>
+        </article>
+        {% endfor %}
+        <p>By the way, this is a <a href="https://nownownow.com/about" target="_blank">now page</a>. You should make one too.</p>
         <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #eee;">
         <a href="/" style="text-decoration: none; color: #0066cc;">← Back to Home</a>
-        
     </main>
-        
 </body>
 </html>
